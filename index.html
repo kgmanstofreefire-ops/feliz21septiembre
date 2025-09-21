@@ -7,11 +7,33 @@
     <style>
         body {
             margin: 0;
-            padding: 0;
+            padding: 0 120px; /* Deja espacio a los lados para las imágenes */
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(to bottom, #fff9b0, #fff1a8);
             text-align: center;
             color: #ff8c00;
+            position: relative;
+        }
+
+        /* Flores laterales */
+        .side {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            width: 100px;
+            background-repeat: repeat-y;
+            background-size: 80px;
+            z-index: -1;
+        }
+
+        .left {
+            left: 0;
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/47/Yellow_flower_icon.png");
+        }
+
+        .right {
+            right: 0;
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/47/Yellow_flower_icon.png");
         }
 
         h1 {
@@ -52,6 +74,10 @@
     </style>
 </head>
 <body>
+    <!-- Bordes laterales -->
+    <div class="side left"></div>
+    <div class="side right"></div>
+
     <h1>🌼 ¡Feliz 21 de Septiembre! 🌼</h1>
     <div class="flowers">
         <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Yellow_flower_icon.png" alt="flor amarilla" class="flower">
@@ -60,13 +86,15 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Yellow_flower_icon.png" alt="flor amarilla" class="flower">
     </div>
     <p>
-        Quiero que sepas que te amo mucho,te valoro y te aprecio con todo mi corazón. 
+        Quiero que sepas que te amo mucho, te valoro y te aprecio con todo mi corazón. 
         Eres una persona demasiado importante para mí, y usted lo sabe.
         Con la llegada respectiva de la primavera y la entrega de estas flores amarillas virtuales, tómalo como un detalle de cariño, amistad, lealtad y amor.
     </p>
     <p>
-        ¡Con Consideración Para:JASSLINE NICOLE SOLIS CIFUENTES !
+        ¡Con consideración para: <strong>JASSLINE NICOLE SOLIS CIFUENTES</strong>!
     </p>
-    <footer>Y con todo el afecto del mundo,de alguien que piensa en ti siempre 🌼💛</footer>
+    <footer>Y con todo el afecto del mundo, de alguien que piensa en ti siempre 🌼💛</footer>
 </body>
+</html>
+
 </html>
